@@ -1,0 +1,21 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace InitProject.Model.Dto;
+
+public class EpisodeDto
+{
+    [Required]
+    public int Id { get; set; }
+
+    [Required]
+    public int AnimeId { get; set; }
+
+    [Required]
+    public string Titulo { get; set; }
+
+    [Required]
+    public int Numero { get; set; }
+
+    [Required]
+    public int Duracao { get; set; }
+}

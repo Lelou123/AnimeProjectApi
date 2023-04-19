@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>InitProject</name>
+    </assembly>
+    <members>
+        <member name="M:InitProject.Controllers.AnimeController.AddAnime(InitProject.Model.Dto.Anime.CreateAnimeDto)">
+            <summary>
+            Adiciona um anime ao banco de dados
+            </summary>
+            <param name="animeDto">Objeto com os campos necessários para criação de um anime</param>
+            <returns>IActionResult</returns>
+            <response code="201">Caso inserção seja feita com sucesso</response>
+        </member>
+        <member name="M:InitProject.Controllers.AnimeController.GetAnimes(System.Int32,System.Int32)">
+            <summary>
+            Recuperar uma lista de animes.
+            </summary>
+            <param name="pageSize">integer com a quantidade de itens por pagina</param>
+            <param name="pageNumber">integer numero da pagina que será retornado</param>
+            <returns>Um objeto de anime</returns>
+            <response code="201"> Caso a requisição seja feita com sucesso</response>
+        </member>
+        <member name="M:InitProject.Controllers.AnimeController.GetAnimeById(System.Int32)">
+            <summary>
+            Recuperar um anime especifico.
+            </summary>
+            <param name="id">integer id do anime a ser retornado</param>
+            <returns>IActionResult</returns>
+            <response code="200"> Caso a requiisição seja feita com sucesso</response>
+        </member>
+        <member name="M:InitProject.Controllers.AnimeController.UpdateAnime(System.Int32,InitProject.Model.Dto.UpdateAnimeDto)">
+            <summary>
+            Atualizar todos dados um anime especifico.
+            </summary>
+            <param name="id">integer id do anime a ser alterado</param>
+            <param name="animeDto">objeto com todos os dados a serem alterados no anime.</param>
+            <returns>IActionResult</returns>
+            <response code="204"> Caso a requisição seja feita com sucesso</response>
+        </member>
+        <member name="M:InitProject.Controllers.AnimeController.UpdatePatchAnime(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{InitProject.Model.Models.AnimeModel})">
+            <summary>
+            Atualizar um dado especifico de um anime.
+            </summary>
+            <param name="id">integer id do anime a ser alterado</param>
+            <param name="patch">objeto com os dados especificos a serem alterados no anime.</param>
+            <returns>IActionResult</returns>
+            <response code="204"> Caso a requisição seja feita com sucesso</response>
+        </member>
+        <member name="M:InitProject.Controllers.AnimeController.RemoveAnime(System.Int32)">
+            <summary>
+            Deletar um anime especifico.
+            </summary>
+            <param name="id">integer id do anime a ser deletado</param>    
+            <returns>IActionResult</returns>
+            <response code="200"> Caso a requisição seja feita com sucesso</response>
+        </member>
+        <member name="M:InitProject.Controllers.CharacterController.AddCharacter(InitProject.Model.Dto.Character.CreateCharacterDto)">
+            <summary>
+            Adiciona um personagem ao banco de dados
+            </summary>
+            <param name="characterDto">Objeto com os campos necessários para criação de um personagem</param>
+            <returns>IActionResult</returns>
+            <response code="201">Caso inserção seja feita com sucesso</response>
+        </member>
+        <member name="M:InitProject.Controllers.CharacterController.GetCharacters(System.Int32,System.Int32)">
+            <summary>
+            Recuperar uma lista de personagens.
+            </summary>
+            <param name="pageSize">integer com a quantidade de itens por pagina</param>
+            <param name="pageNumber">integer numero da pagina que será retornado</param>
+            <returns>Um objeto de anime</returns>
+            <response code="201"> Caso a requisição seja feita com sucesso</response>
+        </member>
+        <member name="M:InitProject.Controllers.CharacterController.GetCharacterById(System.Int32)">
+            <summary>
+            Recuperar um personagem especifico.
+            </summary>
+            <param name="id">integer id do personagem a ser retornado</param>
+            <returns>IActionResult</returns>
+            <response code="200"> Caso a requisição seja feita com sucesso</response>
+        </member>
+        <member name="M:InitProject.Controllers.CharacterController.UpdateCharacter(System.Int32,InitProject.Model.Dto.Character.UpdateCharacterDto)">
+            <summary>
+            Atualizar todos dados um personagem especifico.
+            </summary>
+            <param name="id">integer id do personagem a ser alterado</param>
+            <param name="characterDto">objeto com todos os dados a serem alterados no personagem.</param>
+            <returns>IActionResult</returns>
+            <response code="204"> Caso a requisição seja feita com sucesso</response>
+        </member>
+        <member name="M:InitProject.Controllers.CharacterController.RemoveAnime(System.Int32)">
+            <summary>
+            Deletar um personagem especifico.
+            </summary>
+            <param name="id">integer id do personagem a ser deletado</param>    
+            <returns>IActionResult</returns>
+            <response code="200"> Caso a requisição seja feita com sucesso</response>
+        </member>
+        <member name="M:InitProject.Controllers.EpisodeController.AddEpisode(InitProject.Model.Dto.CreateEpisodeDto)">
+            <summary>
+            Adiciona um episodio de um anime ao banco de dados
+            </summary>
+            <param name="episodeDto">Objeto com os campos necessários para criação de um episodio</param>
+            <returns>IActionResult</returns>
+            <response code="201">Caso inserção seja feita com sucesso</response>
+        </member>
+        <member name="M:InitProject.Controllers.EpisodeController.GetEpisodes(System.Int32,System.Int32)">
+            <summary>
+            Recuperar uma lista de episodios.
+            </summary>
+            <param name="pageSize">integer com a quantidade de itens por pagina</param>
+            <param name="pageNumber">integer numero da pagina que será retornado</param>
+            <returns>Um objeto de epiosodio</returns>
+            <response code="201"> Caso a requisição seja feita com sucesso</response>
+        </member>
+        <member name="M:InitProject.Controllers.EpisodeController.GetEpisodeById(System.Int32)">
+            <summary>
+            Recuperar um episodio especifico.
+            </summary>
+            <param name="id">integer id do episodio a ser retornado</param>
+            <returns>IActionResult</returns>
+            <response code="200"> Caso a requiisição seja feita com sucesso</response>
+        </member>
+        <member name="M:InitProject.Controllers.EpisodeController.UpdateEpisode(System.Int32,InitProject.Model.Dto.UpdateEpisodeDto)">
+            <summary>
+            Atualizar todos dados um episodio especifico.
+            </summary>
+            <param name="id">integer id do episodio a ser alterado</param>
+            <param name="animeDto">objeto com todos os dados a serem alterados no episodio.</param>
+            <returns>IActionResult</returns>
+            <response code="204"> Caso a requisição seja feita com sucesso</response>
+        </member>
+        <member name="M:InitProject.Controllers.EpisodeController.DeleteEpisode(System.Int32)">
+            <summary>
+            Deletar um episodio especifico.
+            </summary>
+            <param name="id">integer id do episodio a ser deletado</param>    
+            <returns>IActionResult</returns>
+            <response code="200"> Caso a requisição seja feita com sucesso</response>
+        </member>
+        <member name="T:InitProject.Migrations.pgTeste">
+            <inheritdoc />
+        </member>
+        <member name="M:InitProject.Migrations.pgTeste.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:InitProject.Migrations.pgTeste.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:InitProject.Migrations.pgTeste.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:InitProject.Migrations.addcharacters">
+            <inheritdoc />
+        </member>
+        <member name="M:InitProject.Migrations.addcharacters.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:InitProject.Migrations.addcharacters.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:InitProject.Migrations.addcharacters.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
