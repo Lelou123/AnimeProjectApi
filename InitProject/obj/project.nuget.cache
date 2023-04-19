@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "k/TVFJHHOAZ6O7J2Ba66ZqMhJoc6GLzScI7Jy0uTXb7r5eexFiX3lfPxWPnPSNWCrG1hI/bCs5o5D3s+G4bggg==",
+  "dgSpecHash": "wnC+XVdtkIDGiBF/HYvIQKLdZ1QG2CHKcLuIlML5DF2VlLdx1Fa4k82kpMiMRZrGgL8NPnVRItYqRQ7WJxwq3g==",
   "success": true,
-  "projectFilePath": "D:\\AluraCursos\\11CriandoApi\\InitProject\\InitProject\\InitProject.csproj",
+  "projectFilePath": "D:\\ProjetoAnime\\AnimeProjectApi\\InitProject\\InitProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Muril\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Muril\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

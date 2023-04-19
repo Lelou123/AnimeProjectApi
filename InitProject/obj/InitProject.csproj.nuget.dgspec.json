@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\AluraCursos\\11CriandoApi\\InitProject\\InitProject\\InitProject.csproj": {}
+    "D:\\ProjetoAnime\\AnimeProjectApi\\InitProject\\InitProject.csproj": {}
   },
   "projects": {
-    "D:\\AluraCursos\\11CriandoApi\\InitProject\\DataAcess\\UnitTeste.csproj": {
+    "D:\\ProjetoAnime\\AnimeProjectApi\\DataAcess\\UnitTeste.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\AluraCursos\\11CriandoApi\\InitProject\\DataAcess\\UnitTeste.csproj",
+        "projectUniqueName": "D:\\ProjetoAnime\\AnimeProjectApi\\DataAcess\\UnitTeste.csproj",
         "projectName": "UnitTeste",
-        "projectPath": "D:\\AluraCursos\\11CriandoApi\\InitProject\\DataAcess\\UnitTeste.csproj",
+        "projectPath": "D:\\ProjetoAnime\\AnimeProjectApi\\DataAcess\\UnitTeste.csproj",
         "packagesPath": "C:\\Users\\Muril\\.nuget\\packages\\",
-        "outputPath": "D:\\AluraCursos\\11CriandoApi\\InitProject\\DataAcess\\obj\\",
+        "outputPath": "D:\\ProjetoAnime\\AnimeProjectApi\\DataAcess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -63,14 +63,14 @@
         }
       }
     },
-    "D:\\AluraCursos\\11CriandoApi\\InitProject\\InitProject\\InitProject.csproj": {
+    "D:\\ProjetoAnime\\AnimeProjectApi\\InitProject\\InitProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\AluraCursos\\11CriandoApi\\InitProject\\InitProject\\InitProject.csproj",
+        "projectUniqueName": "D:\\ProjetoAnime\\AnimeProjectApi\\InitProject\\InitProject.csproj",
         "projectName": "InitProject",
-        "projectPath": "D:\\AluraCursos\\11CriandoApi\\InitProject\\InitProject\\InitProject.csproj",
+        "projectPath": "D:\\ProjetoAnime\\AnimeProjectApi\\InitProject\\InitProject.csproj",
         "packagesPath": "C:\\Users\\Muril\\.nuget\\packages\\",
-        "outputPath": "D:\\AluraCursos\\11CriandoApi\\InitProject\\InitProject\\obj\\",
+        "outputPath": "D:\\ProjetoAnime\\AnimeProjectApi\\InitProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -91,8 +91,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\AluraCursos\\11CriandoApi\\InitProject\\DataAcess\\UnitTeste.csproj": {
-                "projectPath": "D:\\AluraCursos\\11CriandoApi\\InitProject\\DataAcess\\UnitTeste.csproj"
+              "D:\\ProjetoAnime\\AnimeProjectApi\\DataAcess\\UnitTeste.csproj": {
+                "projectPath": "D:\\ProjetoAnime\\AnimeProjectApi\\DataAcess\\UnitTeste.csproj"
               }
             }
           }
