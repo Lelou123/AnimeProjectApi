@@ -2,6 +2,6 @@
 
 namespace InitProject.Model.Interfaces.Repository;
 
-public interface ICharacterRepository : IRepository<Character>
+public interface IEstudioRepository : IRepository<Estudio>
 {
 }

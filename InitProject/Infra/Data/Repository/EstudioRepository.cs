@@ -4,8 +4,7 @@ using InitProject.Model.Models;
 
 namespace InitProject.Infra.Data.Repository;
 
-public class CharacterRepository : RepositoryBase<Character>, ICharacterRepository
+public class EstudioRepository : RepositoryBase<Estudio>, IEstudioRepository
 {
-    public CharacterRepository(DbPgContext context) : base(context) { }
-    
+    public EstudioRepository(DbPgContext context) : base(context) { }
 }

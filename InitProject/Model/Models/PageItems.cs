@@ -1,7 +1,4 @@
-﻿using InitProject.Model.Models;
-
-
-namespace InitProject.Model.Entities;
+﻿namespace InitProject.Model.Entities;
 
 public class PageItems
 {

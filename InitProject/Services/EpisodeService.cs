@@ -1,7 +1,5 @@
 ﻿using AutoMapper;
-using InitProject.Infra.Data.Repository;
 using InitProject.Model.Dto;
-using InitProject.Model.Dto.Anime;
 using InitProject.Model.Entities;
 using InitProject.Model.Interfaces.Repository;
 using InitProject.Model.Interfaces.Services;

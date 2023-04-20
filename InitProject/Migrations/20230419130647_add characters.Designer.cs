@@ -9,137 +9,136 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace InitProject.Migrations
+namespace InitProject.Migrations;
+
+[DbContext(typeof(DbPgContext))]
+[Migration("20230419130647_add characters")]
+partial class addcharacters
 {
-    [DbContext(typeof(DbPgContext))]
-    [Migration("20230419130647_add characters")]
-    partial class addcharacters
+    /// <inheritdoc />
+    protected override void BuildTargetModel(ModelBuilder modelBuilder)
     {
-        /// <inheritdoc />
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
-        {
 #pragma warning disable 612, 618
-            modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.5")
-                .HasAnnotation("Proxies:ChangeTracking", false)
-                .HasAnnotation("Proxies:CheckEquality", false)
-                .HasAnnotation("Proxies:LazyLoading", true)
-                .HasAnnotation("Relational:MaxIdentifierLength", 63);
+        modelBuilder
+            .HasAnnotation("ProductVersion", "7.0.5")
+            .HasAnnotation("Proxies:ChangeTracking", false)
+            .HasAnnotation("Proxies:CheckEquality", false)
+            .HasAnnotation("Proxies:LazyLoading", true)
+            .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
-            NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
+        NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("InitProject.Model.Models.AnimeModel", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
+        modelBuilder.Entity("InitProject.Model.Models.AnimeModel", b =>
+            {
+                b.Property<int>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("integer");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+                NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("AnoLancamento")
-                        .HasColumnType("timestamp without time zone");
+                b.Property<DateTime>("AnoLancamento")
+                    .HasColumnType("timestamp without time zone");
 
-                    b.Property<string>("Genero")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("character varying(50)");
+                b.Property<string>("Genero")
+                    .IsRequired()
+                    .HasMaxLength(50)
+                    .HasColumnType("character varying(50)");
 
-                    b.Property<string>("Titulo")
-                        .IsRequired()
-                        .HasColumnType("text");
+                b.Property<string>("Titulo")
+                    .IsRequired()
+                    .HasColumnType("text");
 
-                    b.HasKey("Id");
+                b.HasKey("Id");
 
-                    b.ToTable("Animes");
-                });
+                b.ToTable("Animes");
+            });
 
-            modelBuilder.Entity("InitProject.Model.Models.CharacterModel", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
+        modelBuilder.Entity("InitProject.Model.Models.CharacterModel", b =>
+            {
+                b.Property<int>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("integer");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+                NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("Age")
-                        .HasColumnType("integer");
+                b.Property<int>("Age")
+                    .HasColumnType("integer");
 
-                    b.Property<int>("AnimeId")
-                        .HasColumnType("integer");
+                b.Property<int>("AnimeId")
+                    .HasColumnType("integer");
 
-                    b.Property<bool>("IsAlive")
-                        .HasColumnType("boolean");
+                b.Property<bool>("IsAlive")
+                    .HasColumnType("boolean");
 
-                    b.Property<string>("Nome")
-                        .IsRequired()
-                        .HasColumnType("text");
+                b.Property<string>("Nome")
+                    .IsRequired()
+                    .HasColumnType("text");
 
-                    b.HasKey("Id");
+                b.HasKey("Id");
 
-                    b.HasIndex("AnimeId");
+                b.HasIndex("AnimeId");
 
-                    b.ToTable("Characters");
-                });
+                b.ToTable("Characters");
+            });
 
-            modelBuilder.Entity("InitProject.Model.Models.EpisodeModel", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
+        modelBuilder.Entity("InitProject.Model.Models.EpisodeModel", b =>
+            {
+                b.Property<int>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("integer");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+                NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("AnimeId")
-                        .HasColumnType("integer");
+                b.Property<int>("AnimeId")
+                    .HasColumnType("integer");
 
-                    b.Property<int>("Duracao")
-                        .HasColumnType("integer");
+                b.Property<int>("Duracao")
+                    .HasColumnType("integer");
 
-                    b.Property<int>("Numero")
-                        .HasColumnType("integer");
+                b.Property<int>("Numero")
+                    .HasColumnType("integer");
 
-                    b.Property<string>("Titulo")
-                        .IsRequired()
-                        .HasColumnType("text");
+                b.Property<string>("Titulo")
+                    .IsRequired()
+                    .HasColumnType("text");
 
-                    b.HasKey("Id");
+                b.HasKey("Id");
 
-                    b.HasIndex("AnimeId")
-                        .IsUnique();
+                b.HasIndex("AnimeId")
+                    .IsUnique();
 
-                    b.ToTable("Episodes");
-                });
+                b.ToTable("Episodes");
+            });
 
-            modelBuilder.Entity("InitProject.Model.Models.CharacterModel", b =>
-                {
-                    b.HasOne("InitProject.Model.Models.AnimeModel", "Anime")
-                        .WithMany("Characters")
-                        .HasForeignKey("AnimeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+        modelBuilder.Entity("InitProject.Model.Models.CharacterModel", b =>
+            {
+                b.HasOne("InitProject.Model.Models.AnimeModel", "Anime")
+                    .WithMany("Characters")
+                    .HasForeignKey("AnimeId")
+                    .OnDelete(DeleteBehavior.Cascade)
+                    .IsRequired();
 
-                    b.Navigation("Anime");
-                });
+                b.Navigation("Anime");
+            });
 
-            modelBuilder.Entity("InitProject.Model.Models.EpisodeModel", b =>
-                {
-                    b.HasOne("InitProject.Model.Models.AnimeModel", "Anime")
-                        .WithOne("Episode")
-                        .HasForeignKey("InitProject.Model.Models.EpisodeModel", "AnimeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+        modelBuilder.Entity("InitProject.Model.Models.EpisodeModel", b =>
+            {
+                b.HasOne("InitProject.Model.Models.AnimeModel", "Anime")
+                    .WithOne("Episode")
+                    .HasForeignKey("InitProject.Model.Models.EpisodeModel", "AnimeId")
+                    .OnDelete(DeleteBehavior.Cascade)
+                    .IsRequired();
 
-                    b.Navigation("Anime");
-                });
+                b.Navigation("Anime");
+            });
 
-            modelBuilder.Entity("InitProject.Model.Models.AnimeModel", b =>
-                {
-                    b.Navigation("Characters");
+        modelBuilder.Entity("InitProject.Model.Models.AnimeModel", b =>
+            {
+                b.Navigation("Characters");
 
-                    b.Navigation("Episode")
-                        .IsRequired();
-                });
+                b.Navigation("Episode")
+                    .IsRequired();
+            });
 #pragma warning restore 612, 618
-        }
     }
 }

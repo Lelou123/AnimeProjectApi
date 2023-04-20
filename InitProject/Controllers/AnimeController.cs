@@ -1,13 +1,9 @@
 ﻿using AutoMapper;
-using InitProject.Data.Context;
-using InitProject.Infra.Data.Repository;
 using InitProject.Model.Dto;
 using InitProject.Model.Dto.Anime;
 using InitProject.Model.Entities;
-using InitProject.Model.Interfaces.Repository;
 using InitProject.Model.Interfaces.Services;
 using InitProject.Model.Models;
-using InitProject.Services;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 

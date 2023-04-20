@@ -1,17 +1,11 @@
-
-using AutoMapper;
 using InitProject.Data.Context;
 using InitProject.Infra.Data.Repository;
-using InitProject.Model.Dto;
-using InitProject.Model.Entities;
 using InitProject.Model.Interfaces.Repository;
 using InitProject.Model.Interfaces.Services;
 using InitProject.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-using Newtonsoft.Json;
 using System.Reflection;
-using System.Runtime.Intrinsics.X86;
 
 namespace InitProject;
 
@@ -30,6 +24,9 @@ public class Program
 
         builder.Services.AddScoped<ICharacterService, CharacterService>();
         builder.Services.AddScoped<ICharacterRepository, CharacterRepository>();
+
+        builder.Services.AddScoped<IEstudioService, EstudioService>();
+        builder.Services.AddScoped<IEstudioRepository, EstudioRepository>();
 
         //builder.Services.AddDbContext<AnimeContext>(opt => opt.UseLazyLoadingProxies().UseSqlServer
         //    (builder.Configuration.GetConnectionString("FilmeConnectionSQL")));

@@ -1,5 +1,4 @@
-﻿using InitProject.Model.Dto.Anime;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace InitProject.Model.Dto.Character;
 

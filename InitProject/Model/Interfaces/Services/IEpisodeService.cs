@@ -1,10 +1,8 @@
-﻿using InitProject.Model.Dto.Anime;
-using InitProject.Model.Dto;
+﻿using InitProject.Model.Dto;
 using InitProject.Model.Entities;
 using InitProject.Model.Models;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
-using InitProject.Model.Interfaces.Repository;
 
 namespace InitProject.Model.Interfaces.Services;
 

@@ -10,3 +10,15 @@ D:\AluraCursos\11CriandoApi\InitProject\DataAcess\obj\Debug\net7.0\UnitTeste.dll
 D:\AluraCursos\11CriandoApi\InitProject\DataAcess\obj\Debug\net7.0\refint\UnitTeste.dll
 D:\AluraCursos\11CriandoApi\InitProject\DataAcess\obj\Debug\net7.0\UnitTeste.pdb
 D:\AluraCursos\11CriandoApi\InitProject\DataAcess\obj\Debug\net7.0\ref\UnitTeste.dll
+D:\ProjetoAnime\AnimeProjectApi\DataAcess\bin\Debug\net7.0\UnitTeste.deps.json
+D:\ProjetoAnime\AnimeProjectApi\DataAcess\bin\Debug\net7.0\UnitTeste.dll
+D:\ProjetoAnime\AnimeProjectApi\DataAcess\bin\Debug\net7.0\UnitTeste.pdb
+D:\ProjetoAnime\AnimeProjectApi\DataAcess\obj\Debug\net7.0\UnitTeste.csproj.AssemblyReference.cache
+D:\ProjetoAnime\AnimeProjectApi\DataAcess\obj\Debug\net7.0\UnitTeste.GeneratedMSBuildEditorConfig.editorconfig
+D:\ProjetoAnime\AnimeProjectApi\DataAcess\obj\Debug\net7.0\UnitTeste.AssemblyInfoInputs.cache
+D:\ProjetoAnime\AnimeProjectApi\DataAcess\obj\Debug\net7.0\UnitTeste.AssemblyInfo.cs
+D:\ProjetoAnime\AnimeProjectApi\DataAcess\obj\Debug\net7.0\UnitTeste.csproj.CoreCompileInputs.cache
+D:\ProjetoAnime\AnimeProjectApi\DataAcess\obj\Debug\net7.0\UnitTeste.dll
+D:\ProjetoAnime\AnimeProjectApi\DataAcess\obj\Debug\net7.0\refint\UnitTeste.dll
+D:\ProjetoAnime\AnimeProjectApi\DataAcess\obj\Debug\net7.0\UnitTeste.pdb
+D:\ProjetoAnime\AnimeProjectApi\DataAcess\obj\Debug\net7.0\ref\UnitTeste.dll

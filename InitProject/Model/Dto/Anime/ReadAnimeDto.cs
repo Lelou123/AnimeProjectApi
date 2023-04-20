@@ -1,5 +1,4 @@
-﻿using InitProject.Model.Dto;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace InitProject.Model.Dto.Anime;
 
@@ -21,5 +20,7 @@ public class ReadAnimeDto
     public EpisodeDto Episode { get; set; }
 
     public List<CharacterDto> Characters { get; set; }
+
+    public List<AnimeEstudioDto> AnimeEstudio { get; set; }
 }
 

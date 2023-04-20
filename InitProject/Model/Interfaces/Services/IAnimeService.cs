@@ -2,7 +2,6 @@
 using InitProject.Model.Dto.Anime;
 using InitProject.Model.Entities;
 using InitProject.Model.Models;
-using MathNet.Numerics.Statistics.Mcmc;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 

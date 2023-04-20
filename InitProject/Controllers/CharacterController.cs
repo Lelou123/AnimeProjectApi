@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using InitProject.Model.Dto.Anime;
 using InitProject.Model.Dto;
 using InitProject.Model.Entities;
 using InitProject.Model.Interfaces.Services;

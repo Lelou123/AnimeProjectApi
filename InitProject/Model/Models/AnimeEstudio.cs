@@ -1,18 +1,16 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace InitProject.Model.Models
-{
-    public class AnimeEstudio
-    {        
-        public int? EstudioId { get; set; }
+namespace InitProject.Model.Models;
 
-        [ForeignKey("EstudioId")]
-        public virtual Estudio Estudio { get; set; }
+public class AnimeEstudio
+{        
+    public int? EstudioId { get; set; }
 
-        public int? AnimeId { get; set; }
+    [ForeignKey("EstudioId")]
+    public virtual Estudio Estudio { get; set; }
 
-        [ForeignKey("AnimeId")]
-        public virtual Anime Anime { get; set; }
-    }
+    public int? AnimeId { get; set; }
+
+    [ForeignKey("AnimeId")]
+    public virtual Anime Anime { get; set; }
 }

@@ -31,5 +31,10 @@ public class DbPgContext : DbContext
             .HasOne(x => x.Estudio)
             .WithMany(x => x.AnimesEstudios)
             .HasForeignKey(x => x.EstudioId);
+
+        builder.Entity<Anime>()
+            .HasOne(endereco => endereco.Episode)
+            .WithOne(cinema => cinema.Anime)
+            .OnDelete(DeleteBehavior.Restrict);
     }
 }

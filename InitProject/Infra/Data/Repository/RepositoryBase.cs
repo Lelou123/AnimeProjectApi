@@ -4,8 +4,6 @@ using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
-using System.Threading.Tasks;
-using System.Collections.Generic;
 
 namespace InitProject.Infra.Data.Repository;
 

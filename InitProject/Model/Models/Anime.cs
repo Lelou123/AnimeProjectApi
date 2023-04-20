@@ -1,8 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
-using System.Collections.Generic;
+﻿using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace InitProject.Model.Models;
 
@@ -26,6 +23,6 @@ public class Anime
     public virtual ICollection<Character> Characters { get; set; }
 
     public virtual ICollection<Estudio>Estudios { get; set; }
-    public ICollection<AnimeEstudio> AnimesEstudios { get; set; }
+    public virtual ICollection<AnimeEstudio> AnimesEstudios { get; set; }
 
 }

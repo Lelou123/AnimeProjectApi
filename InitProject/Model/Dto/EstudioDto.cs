@@ -2,7 +2,7 @@
 
 namespace InitProject.Model.Dto;
 
-public class CharacterDto
+public class EstudioDto
 {
     [Required]
     public int Id { get; set; }
@@ -11,11 +11,5 @@ public class CharacterDto
     public string Nome { get; set; }
 
     [Required]
-    public int Age { get; set; }
-
-    [Required]
-    public bool IsAlive { get; set; }
-
-    [Required]
-    public int AnimeId { get; set; }
+    public DateTime DataFundacao { get; set; }
 }

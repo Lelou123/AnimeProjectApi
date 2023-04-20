@@ -2,7 +2,6 @@
 using InitProject.Model.Dto;
 using InitProject.Model.Dto.Anime;
 using InitProject.Model.Models;
-using InitProject.Model.Dto;
 
 namespace InitProject.Infra.Data.Profiles;
 
@@ -18,7 +17,8 @@ public class AnimeProfile : Profile
 
         CreateMap<Anime, ReadAnimeDto>()
              .ForMember(ep => ep.Episode, opt => opt.MapFrom(o => o.Episode))
-             .ForMember(ch => ch.Characters, opt => opt.MapFrom(o => o.Characters));
+             .ForMember(ch => ch.Characters, opt => opt.MapFrom(o => o.Characters))
+             .ForMember(ea => ea.AnimeEstudio, opt => opt.MapFrom(o => o.AnimesEstudios));
         
         CreateMap<Anime, AnimeDto>();
                 

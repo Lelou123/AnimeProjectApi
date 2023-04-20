@@ -38,7 +38,7 @@
             <returns>IActionResult</returns>
             <response code="204"> Caso a requisição seja feita com sucesso</response>
         </member>
-        <member name="M:InitProject.Controllers.AnimeController.UpdatePatchAnime(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{InitProject.Model.Models.AnimeModel})">
+        <member name="M:InitProject.Controllers.AnimeController.UpdatePatchAnime(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{InitProject.Model.Models.Anime})">
             <summary>
             Atualizar um dado especifico de um anime.
             </summary>
@@ -139,6 +139,31 @@
             <returns>IActionResult</returns>
             <response code="200"> Caso a requisição seja feita com sucesso</response>
         </member>
+        <member name="M:InitProject.Controllers.EstudioController.AddEstudio(InitProject.Model.Dto.Estudio.CreateEstudioDto)">
+            <summary>
+            Adiciona um estudio ao banco de dados
+            </summary>
+            <param name="estudioDto">Objeto com os campos necessários para criação de um estudio</param>
+            <returns>IActionResult</returns>
+            <response code="201">Caso inserção seja feita com sucesso</response>
+        </member>
+        <member name="M:InitProject.Controllers.EstudioController.GetAnimes(System.Int32,System.Int32)">
+            <summary>
+            Recuperar uma lista de estudios.
+            </summary>
+            <param name="pageSize">integer com a quantidade de itens por pagina</param>
+            <param name="pageNumber">integer numero da pagina que será retornado</param>
+            <returns>Um objeto de estudio</returns>
+            <response code="201"> Caso a requisição seja feita com sucesso</response>
+        </member>
+        <member name="M:InitProject.Controllers.EstudioController.GetAnimeById(System.Int32)">
+            <summary>
+            Recuperar um estudio especifico.
+            </summary>
+            <param name="id">integer id do estudio a ser retornado</param>
+            <returns>IActionResult</returns>
+            <response code="200"> Caso a requiisição seja feita com sucesso</response>
+        </member>
         <member name="T:InitProject.Migrations.pgTeste">
             <inheritdoc />
         </member>
@@ -161,6 +186,30 @@
             <inheritdoc />
         </member>
         <member name="M:InitProject.Migrations.addcharacters.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:InitProject.Migrations.AddEstudios">
+            <inheritdoc />
+        </member>
+        <member name="M:InitProject.Migrations.AddEstudios.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:InitProject.Migrations.AddEstudios.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:InitProject.Migrations.AddEstudios.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:InitProject.Migrations.adddeletebehavior">
+            <inheritdoc />
+        </member>
+        <member name="M:InitProject.Migrations.adddeletebehavior.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:InitProject.Migrations.adddeletebehavior.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:InitProject.Migrations.adddeletebehavior.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
     </members>

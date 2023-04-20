@@ -2,12 +2,9 @@
 using AutoMapper;
 using InitProject.Model.Entities;
 using InitProject.Model.Dto;
-using InitProject.Data.Context;
 using InitProject.Model.Models;
-using InitProject.Model.Interfaces.Repository;
 using InitProject.Model.Interfaces.Services;
 using System.ComponentModel.DataAnnotations;
-using InitProject.Model.Dto.Anime;
 
 namespace InitProject.Controllers;
 
